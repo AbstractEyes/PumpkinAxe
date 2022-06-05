@@ -1,0 +1,9 @@
+name: PumpkinAxe
+main: com.abstractphil.pumpkin.PumpkinMain
+version: 1.0
+description: "AbstractPhil's Pumpkin Axe"
+depend: [RedItems]
+commands:
+  pumpkin:
+    description: pumpkin axe commands.
+    usage: incorrect input.

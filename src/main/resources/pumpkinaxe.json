@@ -1,0 +1,222 @@
+{
+	"effects": {
+		"paxe": {
+			"clazz": "com.abstractphil.pumpkin.effects.PumpkinAxeEffect",
+			"effect-name": "paxe",
+			"gui-name": "&f&l✧&a&l✧&2&l✧ &a&lPUMPKIN &f&lAXE &2&l✧&a&l✧&f&l✧",
+			"item-lore": [
+				"",
+				"  &6&l• &e&lSTATISTICS&7:",
+				"",
+				"  &2&l• &a&lTOTAL &2&lHARVESTED&7: &f%paxe",
+				"  &3&l• &b&lADDITIONAL &3&lGAINED&7: &f%pfort",
+				"  &e&l• &6&lCUSTOM &e&lPUMPKINS&7: &f%pcustom",
+				"",
+				" &7&o(( ~ &a&oShift &7&o+ &a&oRight-Click &7&oto &a&oUpgrade&7&o! ~ ))"
+			],
+			"gui-lore": [""],
+			"material": "DIAMOND_AXE",
+			"skull-host": "",
+			"max-level": 1,
+			"cost": 0,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": []
+		},
+		"pcrate": {
+			"clazz": "com.abstractphil.pumpkin.effects.CrateEffect",
+			"effect-name": "pcrate",
+			"gui-name": "&4&l[!] &c&lCRATE DISCOVERER",
+			"item-lore": ["&cCrate Discoverer&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this will allow you to discover &c&oMonthly Crate",
+				"&7&oupon each &6&oPumpkin &7&oMined!",
+				"&7&o(( Increased Chance per Upgrade Level ))",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "ENDER_PORTAL_FRAME",
+			"skull-host": "",
+			"max-level": 1,
+			"cost": 250000,
+			"chance-per-level": 0.0008,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": [
+				"claimgive %player% Pumpkin_Axe_Reward mcrate give {} Monthly 1"
+			]
+		},
+		"pkey": {
+			"clazz": "com.abstractphil.pumpkin.effects.KeyEffect",
+			"effect-name": "pkey",
+			"gui-name": "&5&l[!] &d&lKEY FINDER",
+			"item-lore": ["&dKey Finder&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this will allow you to discover &d&oCrate Keys",
+				"&7&oupon each &6&oPumpkin &7&oMined!",
+				"&7&o(( Increased Chance per Upgrade Level ))",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "ENCHANTED_BOOK",
+			"skull-host": "",
+			"max-level": 3,
+			"cost": 150000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 2,
+			"cooldown": 0,
+			"args": [],
+			"commands": [],
+			"loot": {
+				"snowball": {
+					"chance-per-level": 0.0008,
+					"command": "claimgive %player% Pumpkin_Axe_Reward crate gk {} snowball 1"
+				},
+				"iceshard": {
+					"chance-per-level": 0.0004,
+					"command": "claimgive %player% Pumpkin_Axe_Reward crate gk {} iceshard 1"
+				}
+			}
+		},
+		"psell": {
+			"clazz": "com.abstractphil.pumpkin.effects.SellEffect",
+			"effect-name": "psell",
+			"gui-name": "&2&l[!] &a&lAUTO-SELLING",
+			"item-lore": ["&eAuto-Sell&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this upgrade will allow you to &f&oRight-Click",
+				"&7&oto &a&oSell &7&oany item in your inventory without having",
+				"&7&oto do &c&o/sell all&7&o!",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "DIAMOND",
+			"skull-host": "",
+			"max-level": 1,
+			"cost": 5000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 15,
+			"args": [],
+			"commands": ["sell all"]
+		},
+		"pspeed": {
+			"clazz": "com.abstractphil.pumpkin.effects.SpeedEffect",
+			"effect-name": "pspeed",
+			"gui-name": "&3&l[!] &b&lSPEED",
+			"item-lore": ["&bSpeed &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this upgrade will allow you to gain &b&n&oPermanent Speed",
+				"&7&owhen the &6&oAxe &7&ois held in your hand.",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "SUGAR",
+			"skull-host": "",
+			"max-level": 3,
+			"cost": 15000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": []
+		},
+		"peff": {
+			"clazz": "com.abstractphil.pumpkin.effects.EfficiencyEffect",
+			"effect-name": "peff",
+			"vanilla-enchant": "DIG_SPEED",
+			"gui-name": "&6&l[!] &e&lEFFICIENCY",
+			"item-lore": ["&eEfficiency&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this upgrade will add &e&oEfficiency &7&oto your",
+				"&7&oaxe which will allow you to mine &6&oPumpkins &7&ofaster.",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "REDSTONE",
+			"skull-host": "",
+			"max-level": 5,
+			"cost": 10000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": []
+		},
+		"pcustom": {
+			"clazz": "com.abstractphil.pumpkin.effects.CustomEffect",
+			"effect-name": "pcustom",
+			"gui-name": "&4&l[!] &c&lPUMPKIN PLOWER",
+			"item-lore": ["&cPumpkin Plower&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing will allow you to gain &e&oCustom Pumpkins",
+				"&7&othat sell for high amounts of &a&oMoney&7&o!",
+				"&7&o(( Increased Chance per Upgrade Level ))",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "JACK_O_LANTERN",
+			"skull-host": "",
+			"max-level": 3,
+			"cost": 50000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1,
+			"cooldown": 0,
+			"args": [],
+			"commands": [],
+			"loot": {
+				"pumpkin1": {
+					"chance-per-level": 0.008,
+					"command": "loot %player% Pumpkin1 %amount%"
+				},
+				"pumpkin2": {
+					"chance-per-level": 0.007,
+					"command": "loot %player% Pumpkin2 %amount%"
+				},
+				"pumpkin3": {
+					"chance-per-level": 0.006,
+					"command": "loot %player% Pumpkin3 %amount%"
+				}
+			}
+		},
+		"pfort": {
+			"clazz": "com.abstractphil.pumpkin.effects.FortuneEffect",
+			"effect-name": "pfort",
+			"gui-name": "&6&l[!] &e&lPUMPKIN LOOTER",
+			"item-lore": ["&ePumpkin Looter&7: &f%l"],
+			"gui-lore": [
+				"",
+				"&7&oPurchasing this upgrade will allow you to gain additional",
+				"&7&o&nVanilla Pumpkins&7&o upon each &6&oPumpkin &7&obroken.",
+				"&7&o(( Increased Chance per Upgrade Level ))",
+				"",
+				" &7&o(( ~ Left-Click to &f&oPurchase&7&o! ~ ))",
+				""
+			],
+			"material": "diamond_block",
+			"skull-host": "",
+			"max-level": 5,
+			"cost": 100000,
+			"chance-per-level": 1,
+			"multiplier-per-level": 1.75,
+			"cooldown": 0,
+			"args": [],
+			"commands": []
+		}
+	}
+}
